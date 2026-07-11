@@ -1,0 +1,43 @@
+/* ========================================= */
+/* FESTIVAL PAGE RESPONSIVE                  */
+/* ========================================= */
+
+/* Tablet & Small Laptops */
+@media (max-width: 900px) {
+    .festival-grid {
+        grid-template-columns: 1fr 1fr !important; /* 2 columns on tablet */
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+    .section-title p {
+        font-size: 1rem !important;
+    }
+    .festival-name {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .festival-grid {
+        grid-template-columns: 1fr !important; /* 1 column on mobile */
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    .section-title p {
+        font-size: 0.85rem !important;
+    }
+    .festival-card {
+        padding: 15px !important;
+    }
+    .festival-name {
+        font-size: 1.1rem !important;
+    }
+    .image-gallery img {
+        border-radius: 6px !important;
+    }
+}

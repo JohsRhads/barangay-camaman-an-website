@@ -1,0 +1,45 @@
+/* ========================================= */
+/* OFFICIALS PAGE RESPONSIVE                 */
+/* ========================================= */
+
+/* Tablet & Small Laptops */
+@media (max-width: 900px) {
+    .official-row {
+        gap: 15px !important;
+    }
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+    .section-subtitle h3 {
+        font-size: 1.5rem !important;
+    }
+    .official-row.row-3 .official-card,
+    .official-row.row-4 .official-card {
+        max-width: 300px !important;
+        flex: none !important; /* Prevents the cards from stretching weirdly */
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    .section-subtitle h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    /* Shrink the images */
+    .official-img img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    /* Force 3 and 4 card rows to split into 2 columns on mobile */
+    .official-row.row-3 .official-card,
+    .official-row.row-4 .official-card {
+        max-width: 45% !important;
+        min-width: 130px !important;
+        flex: none !important;
+    }
+}

@@ -1,0 +1,61 @@
+/* ========================================= */
+/* FESTIVAL PAGE STYLES                      */
+/* ========================================= */
+
+.festival-area {
+    background: linear-gradient(to bottom, #fdf6f0 0%, #dcc2a0 100%);
+    padding: 60px 20px;
+}
+
+.festival-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.festival-card {
+    background-color: #ffddbf;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.festival-name {
+    font-size: 1.4rem;
+    color: #b85c2e;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+.festival-card .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.festival-card .image-gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .festival-grid {
+        grid-template-columns: 1fr;
+    }
+}

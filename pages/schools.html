@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schools - LGU Barangay Camaman-an</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/navbar-burger.js"></script>
+    <script src="../scripts/zoom-img-attraction.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div>
+                    <img src="../images/logo.jpg" alt="Barangay logo" class="logo-image">
+                </div>
+                <a href="home.html" class="logo">LGU BARANGAY CAMAMAN-AN</a>
+            </div>
+
+            <div class="burger-icon" id="burgerBtn">    
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officials.html">Officials</a></li>
+                <li><a href="attractions.html">Tourist Attractions</a></li>
+                <li><a href="schools.html" class="active">Schools</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="emergency.html">Emergency Hotline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SCHOOLS AREA -->
+    <div class="schools-area">
+        <div class="schools-content">
+            
+            <div class="section-title">
+                <h2>SCHOOLS IN THE BARANGAY</h2>
+                <p>Educational institutions dedicated to nurturing the minds of the youth in Camaman-an.</p>
+            </div>
+
+            <!-- SCHOOLS GRID (3 Cards) -->
+            <div class="schools-grid">
+                
+                <!-- School 1 Card -->
+                <div class="school-card">
+                    <h3 class="school-name">Camaman-an Elementary School</h3>
+                    <p class="school-desc">A public elementary school located in the heart of the barangay, providing foundational education to the children of the community since the 1980s.</p>
+                    <!-- 3 Images for School 1 -->
+                    <div class="image-gallery">
+                        <img src="../images/schools/first-school/fschool-1.jpg" alt="Elementary 1">
+                        <img src="../images/schools/first-school/fschool-2.jpg" alt="Elementary 2">
+                        <img src="../images/schools/first-school/fschool-3.jpg" alt="Elementary 3">
+                    </div>
+                </div>
+
+                <!-- School 2 Card -->
+                <div class="school-card">
+                    <h3 class="school-name">Camaman-an National High School</h3>
+                    <p class="school-desc">A public high school serving the secondary education needs of the barangay and nearby sitios, known for its strong academic and sports programs.</p>
+                    <!-- 3 Images for School 2 -->
+                    <div class="image-gallery">
+                        <img src="../images/schools/second-school/sschool-1.jpg" alt="High School 1">
+                        <img src="../images/schools/second-school/sschool-2.png" alt="High School 2">
+                        <img src="../images/schools/second-school/sschool-4.jpg" alt="High School 3">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-area">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>LGU BARANGAY CAMAMAN-AN</h3>
+                <p>Barangay Camaman-an, Cagayan de Oro City</p>
+                <p>Misamis Oriental, Philippines, 9000</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 LGU Barangay Camaman-an. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX CONTAINER -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+</body>
+</html>

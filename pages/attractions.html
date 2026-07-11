@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Attractions - LGU Barangay Camaman-an</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/navbar-burger.js"></script>
+    <script src="../scripts/zoom-img-attraction.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div>
+                    <img src="../images/logo.jpg" alt="Barangay logo" class="logo-image">
+                </div>
+                <a href="home.html" class="logo">LGU BARANGAY CAMAMAN-AN</a>
+            </div>
+
+            <div class="burger-icon" id="burgerBtn">    
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officials.html">Officials</a></li>
+                <li><a href="attractions.html" class="active">Tourist Attractions</a></li>
+                <li><a href="schools.html">Schools</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="emergency.html">Emergency Hotline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ATTRACTIONS AREA -->
+    <div class="attractions-area">
+        <div class="attractions-content">
+            
+            <div class="section-title">
+                <h2>TOURIST ATTRACTIONS</h2>
+                <p>Discover the beautiful spots and landmarks in Barangay Camaman-an.</p>
+            </div>
+
+            <!-- ATTRACTIONS GRID (3 Cards) -->
+            <div class="attractions-grid">
+                
+                <!-- Place 1 Card -->
+                <div class="place-card">
+                    <h3 class="place-name">August Cafe & Restaurant</h3>
+                    <p class="place-desc">August Cafe & Restaurant is a popular dining spot tucked away in the hilly terrains of Sitio Sta. Cruz, Upper Camaman-an, Cagayan de Oro City. Known for its cozy, aesthetic interior and breezy garden atmosphere, it has become a favorite getaway for people looking to escape the crowded downtown center..</p>
+                    <!-- 3 Images for Place 1 -->
+                    <div class="image-gallery">
+                        <img src="../images/attractions/first-place/fplace-1.jpg" alt="River 1">
+                        <img src="../images/attractions/first-place/fplace-2.jpg" alt="River 2">
+                        <img src="../images/attractions/first-place/fplace-3.jpg" alt="River 3">
+                    </div>
+                </div>
+
+                <!-- Place 2 Card -->
+                <div class="place-card">
+                    <h3 class="place-name">Our Lady of Fatima Parish</h3>
+                    <p class="place-desc">Urbanized area of Barangay Camaman-an, Cagayan de Oro City. Known for its rich local history and welcoming community atmosphere, it has become a sacred sanctuary for residents and visitors looking to find peace, reflection, and spiritual connection away from their busy daily routines.</p>
+                    <!-- 3 Images for Place 2 -->
+                    <div class="image-gallery">
+                        <img src="../images/attractions/second-place/splace-1.jpg" alt="Church 1">
+                        <img src="../images/attractions/second-place/splace-2.jpg" alt="Church 2">
+                        <img src="../images/attractions/second-place/splace-3.jpg" alt="Church 3">
+                    </div>
+                </div>
+
+                <!-- Place 3 Card -->
+                <div class="place-card">
+                    <h3 class="place-name">Camaman-an Heritage Park</h3>
+                    <p class="place-desc"> Sitio Bolonsiri, Upper Camaman-an, Cagayan de Oro City. Known for its historical significance as a site of collective memory and its massive environmental revitalization, it has become a unique open-air landmark for residents looking to find a peaceful, organized sanctuary for reflection away from the busy downtown core.</p>
+                    <!-- 3 Images for Place 3 -->
+                    <div class="image-gallery">
+                        <img src="../images/attractions/third-place/tplace-1.jpg" alt="Park 1">
+                        <img src="../images/attractions/third-place/tplace-2.jpg" alt="Park 2">
+                        <img src="../images/attractions/third-place/tplace-3.jpg" alt="Park 3">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-area">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>LGU BARANGAY CAMAMAN-AN</h3>
+                <p>Barangay Camaman-an, Cagayan de Oro City</p>
+                <p>Misamis Oriental, Philippines, 9000</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 LGU Barangay Camaman-an. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- LIGHTBOX CONTAINER -->
+<div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Zoomed Image">
+</div>
+</body>
+</html>

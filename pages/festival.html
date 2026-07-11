@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival - LGU Barangay Camaman-an</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/navbar-burger.js"></script>
+    <script src="../scripts/zoom-img-attraction.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div>
+                    <img src="../images/logo.jpg" alt="Barangay logo" class="logo-image">
+                </div>
+                <a href="home.html" class="logo">LGU BARANGAY CAMAMAN-AN</a>
+            </div>
+
+            <div class="burger-icon" id="burgerBtn">    
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officials.html">Officials</a></li>
+                <li><a href="attractions.html">Tourist Attractions</a></li>
+                <li><a href="schools.html">Schools</a></li>
+                <li><a href="festival.html" class="active">Festival</a></li>
+                <li><a href="emergency.html">Emergency Hotline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FESTIVAL AREA -->
+    <div class="festival-area">
+        <div class="festival-content">
+            
+            <div class="section-title">
+                <h2>BARANGAY FESTIVAL</h2>
+                <p>Celebrating the rich culture and traditions of Barangay Camaman-an through vibrant festivities.</p>
+            </div>
+
+            <!-- FESTIVAL GRID (3 Cards) -->
+            <div class="festival-grid">
+                
+                <!-- Festival 1 Card -->
+                <div class="festival-card">
+                    <h3 class="festival-name">The Street Dancing</h3>
+                    <div class="image-gallery">
+                        <img src="../images/festivals/festival-3.jpg" alt="Fiesta 1">
+                    </div>
+                </div>
+
+                <!-- Festival 2 Card -->
+                <div class="festival-card">
+                    <h3 class="festival-name">Higalaay Festival</h3>
+                    <div class="image-gallery">
+                        <img src="../images/festivals/festival-2.jpg" alt="Higalaay 1">
+                    </div>
+                </div>
+
+                <!-- Festival 3 Card -->
+                <div class="festival-card">
+                    <h3 class="festival-name">Miss Camaman-an:</h3>
+                    <div class="image-gallery">
+                        <img src="../images/festivals/festival-1.jpg" alt="Anniversary 1">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-area">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>LGU BARANGAY CAMAMAN-AN</h3>
+                <p>Barangay Camaman-an, Cagayan de Oro City</p>
+                <p>Misamis Oriental, Philippines, 9000</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 LGU Barangay Camaman-an. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX CONTAINER -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+</body>
+</html>

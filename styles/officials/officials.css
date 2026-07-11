@@ -1,0 +1,150 @@
+/* ========================================= */
+/* OFFICIALS PAGE STYLES                     */
+/* ========================================= */
+
+.officials-area {
+    background: linear-gradient(to bottom, #fdf6f0 0%, #dcc2a0 100%);
+    padding: 40px 20px;
+}
+
+.officials-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b85c2e;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+}
+
+.section-subtitle h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b85c2e;
+    font-family: 'Georgia', serif;
+    margin: 40px 0 30px 0;
+}
+
+/* --- OFFICIALS ROW LAYOUT --- */
+.official-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* --- THE OFFICIALS CARDS --- */
+.official-card {
+    background-color: #ffddbf;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.official-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.official-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #b85c2e;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.official-card h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.official-card .position {
+    font-size: 0.85rem;
+    color: #b85c2e;
+    font-weight: bold;
+}
+
+.official-info h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.official-info .position {
+    font-size: 1rem;
+}
+
+/* --- ROW SIZING --- */
+/* Rows with 1 item */
+.official-row.row-1 .official-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Rows with 3 items */
+.official-row.row-3 .official-card {
+    width: 100%;
+    max-width: 280px;
+    flex: 1;
+}
+
+/* Rows with 4 items */
+.official-row.row-4 .official-card {
+    width: 100%;
+    max-width: 220px;
+    flex: 1;
+}
+/* ========================================= */
+/* OFFICIALS PAGE RESPONSIVE                 */
+/* ========================================= */
+
+/* Tablet & Small Laptops */
+@media (max-width: 900px) {
+    .official-row {
+        gap: 15px !important;
+    }
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+    .section-subtitle h3 {
+        font-size: 1.5rem !important;
+    }
+    .official-row.row-3 .official-card,
+    .official-row.row-4 .official-card {
+        max-width: 300px !important;
+        flex: none !important; /* Prevents the cards from stretching weirdly */
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    .section-subtitle h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    /* Shrink the images */
+    .official-img img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    /* Force 3 and 4 card rows to split into 2 columns on mobile */
+    .official-row.row-3 .official-card,
+    .official-row.row-4 .official-card {
+        max-width: 45% !important;
+        min-width: 130px !important;
+        flex: none !important;
+    }
+}

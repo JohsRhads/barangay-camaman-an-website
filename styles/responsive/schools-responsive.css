@@ -1,0 +1,53 @@
+/* ========================================= */
+/* SCHOOLS PAGE RESPONSIVE                   */
+/* ========================================= */
+
+/* Tablet & Small Laptops */
+@media (max-width: 900px) {
+    .schools-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+    .section-title p {
+        font-size: 1rem !important;
+    }
+    .school-name {
+        font-size: 1.2rem !important;
+    }
+    .school-desc {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .schools-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    .section-title p {
+        font-size: 0.85rem !important;
+    }
+    .school-card {
+        padding: 15px !important;
+    }
+    .school-name {
+        font-size: 1.1rem !important;
+    }
+    .school-desc {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+    .image-gallery {
+        gap: 8px !important;
+    }
+    .image-gallery img {
+        border-radius: 4px !important;
+    }
+}

@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+    /* Stack the History and Map vertically */
+    .box-contents {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    /* Stack Vision, Mission, Located vertically */
+    .three-boxes {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* Reduce the giant 500px map to a mobile-friendly size */
+    .box-description-map {
+        height: 300px !important;
+    }
+
+    /* Remove the fixed 200px height so long text doesn't get cut off */
+    .three-boxes .box {
+        height: auto !important;
+        min-height: 150px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Make the map even smaller for tiny phones */
+    .box-description-map {
+        height: 200px !important;
+    }
+    
+    /* Make the main title smaller */
+    .history-content h2 {
+        font-size: 1.7rem !important;
+    }
+}

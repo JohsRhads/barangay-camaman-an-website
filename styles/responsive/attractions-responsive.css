@@ -1,0 +1,67 @@
+/* ========================================= */
+/* ATTRACTIONS PAGE RESPONSIVE               */
+/* ========================================= */
+
+/* Tablet & Small Laptops */
+@media (max-width: 900px) {
+    /* Change 3 cards side-by-side to 2 cards */
+    .attractions-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+    
+    .section-title p {
+        font-size: 1rem !important;
+    }
+    
+    .place-name {
+        font-size: 1.2rem !important;
+    }
+    
+    .place-desc {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    /* Change 2 cards to 1 single column */
+    .attractions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    
+    .section-title p {
+        font-size: 0.85rem !important;
+    }
+    
+    .place-card {
+        padding: 15px !important;
+    }
+    
+    .place-name {
+        font-size: 1.1rem !important;
+    }
+    
+    .place-desc {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Keep 3 images in a row on mobile, but smaller */
+    .image-gallery {
+        gap: 8px !important;
+    }
+    
+    .image-gallery img {
+        border-radius: 4px !important;
+    }
+}

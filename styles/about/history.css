@@ -1,0 +1,149 @@
+.about-area {
+    background: linear-gradient(to bottom, #fdf6f0 0%, #dcc2a0 100%);
+    padding: 10px 50px;
+}
+
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.history-content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b85c2e;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+.box-title{
+    display: flex;
+    justify-content: center;
+}
+.box-contents {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.box-content-history {
+    flex: 1;
+    background-color: #ffddbf;
+    padding: 20px;       /* This gives you the space on the right side */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 300px;   /* Ensures it grows if text is long */
+    
+    /* ADD THESE TWO LINES BELOW: */
+    width: 100%;         /* Forces the box to fill the entire available width */
+    box-sizing: border-box; /* Keeps the 20px padding INSIDE the box, not pushing it out */
+}
+.box-description{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    
+}
+.box-description p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.box-content-map{
+    flex:2;
+    background-color: #ffddbf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.box-description-map {
+    width: 100%;
+    height: 500px; /* <-- Increased from 350px to make the box MUCH bigger */
+    border-radius: 8px;
+
+    background-image: url('../../images/MAP.png'); 
+
+    /* CHANGED TO 'cover' - this zooms in and fills the whole big box */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 2px solid #dcc2a0;
+    background-color: #fdf6f0;
+}
+/* ---3 BOXES AREAAAAAAA --- */
+.three-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the boxes */
+    margin-top: 40px;
+}
+.three-boxes .box {
+    flex: 1; /* Each box takes equal space */
+    height: 200px; /* Fixed height for all boxes */
+    background-color: #ffddbf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.box p{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+/* --- PUTTING HOVERING EFFECT EVERY BOXESSSSSS --- */
+/* SELECT ALL BOXES IN ABOUT AREA PERFECTLY */
+/* Apply to ALL boxes in the about area */
+.about-area .box-contents > div,
+.about-area .three-boxes > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Makes it smooth */
+}
+
+/* Hover effect for ALL boxes */
+.about-area .box-contents > div:hover,
+.about-area .three-boxes > div:hover {
+    transform: translateY(-3px); /* Lifts up slightly */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+    /* Stack the History and Map vertically */
+    .box-contents {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    /* Stack Vision, Mission, Located vertically */
+    .three-boxes {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* Reduce the giant 500px map to a mobile-friendly size */
+    .box-description-map {
+        height: 300px !important;
+    }
+
+    /* Remove the fixed 200px height so long text doesn't get cut off */
+    .three-boxes .box {
+        height: auto !important;
+        min-height: 150px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Make the map even smaller for tiny phones */
+    .box-description-map {
+        height: 200px !important;
+    }
+    
+    /* Make the main title smaller */
+    .history-content h2 {
+        font-size: 1.7rem !important;
+    }
+}

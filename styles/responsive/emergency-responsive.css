@@ -1,0 +1,38 @@
+/* ========================================= */
+/* EMERGENCY PAGE RESPONSIVE                 */
+/* ========================================= */
+
+/* Tablet (2 columns) */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 2.2rem !important;
+    }
+}
+
+/* Mobile Phones (1 column - up to 768px) */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr !important; /* Forces 1 column */
+        gap: 20px !important;
+    }
+    .section-title h2 {
+        font-size: 1.7rem !important;
+    }
+    .section-title p {
+        font-size: 0.85rem !important;
+    }
+    .contact-card {
+        padding: 20px !important;
+    }
+    .contact-header {
+        font-size: 1rem !important;
+    }
+    .hashtag-banner {
+        font-size: 0.9rem !important;
+        padding: 10px !important;
+    }
+}

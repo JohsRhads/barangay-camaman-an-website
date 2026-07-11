@@ -1,0 +1,15 @@
+@import url('./home/navbar.css');
+@import url('./home/banner.css');
+@import url('./about/history.css');
+@import url('./officials/officials.css');
+@import url('./attractions/attractions.css');
+@import url('./schools/schools.css');
+@import url('./festival/festival.css');
+@import url('./emergency/emergency.css');
+@import url('./footer/footer.css');
+@import url('./responsive/nav-bar-responsive.css');
+@import url('./responsive/home-responsive.css');
+@import url('./responsive/about-responsive.css');
+@import url('./responsive/attractions-responsive.css');
+@import url('./responsive/schools-responsive.css');
+@import url('./responsive/emergency-responsive.css');

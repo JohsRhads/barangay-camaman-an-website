@@ -1,0 +1,84 @@
+/* ========================================= */
+/* 1. THE BACKGROUND & CONTAINER SETTINGS     */
+/* ========================================= */
+.banner-area {
+    width: 100%;
+    position: relative; /* Important so the inner content stays inside */
+}
+
+.banner-container-img {
+    width: 100%;
+    height: 100vh;
+
+    /* THIS IS THE ONLY LINE YOU NEED FOR DARKENING */
+    /* It puts a black color on top (0.6 = 60% darkness) and fades down to transparent (0) */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%), 
+                url('../../images/banner.png') no-repeat center center/cover;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* ========================================= */
+/* 2. THE STYLE OF THE "WELCOME" & BUTTONS    */
+/* ========================================= */
+
+/* This forces the text block into the exact dead center of the image */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; 
+    max-width: 1000px;
+}
+
+/* The styling for the big "WELCOME" text */
+.banner-content h1 {
+    font-family: 'Georgia', serif; /* Serif font matches the image */
+    font-size: 4rem; /* Big text size */
+    color: #ffffff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6); /* Shadow so text pops over the picture */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* The styling for the smaller paragraph text */
+.banner-content p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+/* ========================================= */
+/* 3. NEW PRIMARY BUTTON STYLE               */
+/* ========================================= */
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px; /* Adds space above the button */
+    background-color: #b85c2e;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none; /* Removes the underline */
+    border-radius: 50px; /* Rounded pill shape */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* When the mouse hovers over it */
+.btn-primary:hover {
+    background-color: #b46138; /* Turns orange */
+    color: #ffffff; /* Text turns white */
+    transform: translateY(-3px); /* Lifts up slightly */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+

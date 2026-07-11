@@ -1,0 +1,128 @@
+/* ========================================= */
+/* ATTRACTIONS PAGE STYLES                   */
+/* ========================================= */
+
+.attractions-area {
+    background: linear-gradient(to bottom, #fdf6f0 0%, #dcc2a0 100%);
+    padding: 60px 20px;
+}
+
+.attractions-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #b85c2e;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* --- ATTRACTIONS GRID (3 Cards side-by-side) --- */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 30px;
+}
+
+/* --- INDIVIDUAL PLACE CARD --- */
+.place-card {
+    background-color: #ffddbf;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.place-name {
+    font-size: 1.4rem;
+    color: #b85c2e;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.place-desc {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* --- 3-IMAGE GALLERY INSIDE THE CARD --- */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns for the images */
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes the images perfect squares */
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================================= */
+/* LIGHTBOX (IMAGE ZOOM)                     */
+/* ========================================= */
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lightbox-overlay.show {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff8d37;
+}
