@@ -1,4 +1,4 @@
-
+/* --- TABLET & MOBILE BURGER MENU (900px and below) --- */
 @media (max-width: 900px) {
     .nav-container {
         flex-wrap: wrap;
@@ -47,5 +47,102 @@
     }
     .burger-icon.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
+
+/* --- SMALL PHONES (321px to 425px) --- */
+@media (min-width: 321px) and (max-width: 425px) {
+    header {
+        padding: 12px 14px !important;
+    }
+
+    .nav-container {
+        gap: 10px !important;
+    }
+
+    .logo-container {
+        gap: 8px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    .logo-image {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .logo {
+        font-size: 13px !important;
+        letter-spacing: 0 !important;
+        line-height: 1.2 !important;
+        white-space: normal !important;
+    }
+
+    .burger-icon {
+        flex-shrink: 0 !important;
+        padding: 3px !important;
+        gap: 4px !important;
+    }
+
+    .burger-icon span {
+        width: 24px !important;
+        height: 2px !important;
+    }
+
+    .nav-menu {
+        padding: 14px 0 !important;
+    }
+
+    .nav-menu li {
+        padding: 10px 0 !important;
+    }
+
+    .nav-menu a {
+        font-size: 14px !important;
+    }
+}
+
+/* --- EXTRA SMALL PHONES (320px and below) --- */
+@media (max-width: 320px) {
+    header {
+        padding: 10px 12px !important;
+    }
+
+    .nav-container {
+        gap: 8px !important;
+    }
+    
+    .logo-container {
+        gap: 8px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    .logo-image {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .logo {
+        font-size: 12px !important;
+        letter-spacing: 0 !important;
+        line-height: 1.2 !important;
+        white-space: normal !important;
+    }
+
+    .burger-icon {
+        flex-shrink: 0 !important;
+        padding: 2px !important;
+        gap: 3px !important;
+    }
+
+    .burger-icon span {
+        width: 22px !important;
+        height: 2px !important;
+    }
+
+    .nav-menu a {
+        font-size: 14px !important;
+        padding: 8px 0 !important;
     }
 }

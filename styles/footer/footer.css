@@ -5,8 +5,8 @@
 .footer-area {
     background-color: #B85C2E; /* Deep dark brown */
     color: #ffffff;
-    padding: 50px 20px 20px 20px;
-    margin-top: 40px; /* Space between content and footer */
+    padding: 28px 20px 14px 20px;
+    margin-top: 24px; /* Space between content and footer */
 }
 
 .footer-content {
@@ -17,36 +17,27 @@
 
 /* --- Title (LGU BARANGAY CAMAMAN-AN) --- */
 .footer-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Georgia', serif;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     color: #ffffff;
     letter-spacing: 1px;
 }
 
 /* --- Address and Contact Info --- */
 .footer-info p {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 0.95rem;
+    line-height: 1.4;
     color: #e0e0e0;
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 /* --- Copyright Section --- */
 .footer-copyright {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 14px;
+    padding-top: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #b0b0b0;
 }
 
-/* --- Responsive --- */
-@media (max-width: 768px) {
-    .footer-area {
-        padding: 30px 15px;
-    }
-    .footer-info h3 {
-        font-size: 1.2rem;
-    }
-}
