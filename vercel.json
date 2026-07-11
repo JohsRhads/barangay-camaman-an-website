@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/pages/home.html" },
+    { "source": "/home", "destination": "/pages/home.html" },
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/officials", "destination": "/pages/officials.html" },
+    { "source": "/attractions", "destination": "/pages/attractions.html" },
+    { "source": "/schools", "destination": "/pages/schools.html" },
+    { "source": "/festival", "destination": "/pages/festival.html" },
+    { "source": "/emergency", "destination": "/pages/emergency.html" }
+  ]
+}
